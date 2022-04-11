@@ -1,7 +1,7 @@
 # Compliance CB CI Ideas
 ## Passive CIs (without remediation)
 * BIOS
-** Check BIOS Settings using Powershell & WMI
+  * Check BIOS Settings using Powershell & WMI
 * Registry
 ** Check existance of a key
 * Services
