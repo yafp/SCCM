@@ -4,6 +4,9 @@
   * Check BIOS Settings using Powershell & WMI
 * Registry
   * Check existance of a key
+* Security
+  * Check if Bitlocker is enabled
+  * Check if SecureBoot is enabled
 * Services
   * Check status of service
   * Check startup type of service
