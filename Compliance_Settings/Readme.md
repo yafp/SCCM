@@ -1,6 +1,6 @@
 # Compliance Settings - Ideas for Configuration Item (CI)
 ## About
-I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM. 
+I am simply collecting here some ideas and example codes/configs for **Configuration Items (CI)** in SCCM. 
 
 
 ## Configuration Items 
