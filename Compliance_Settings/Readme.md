@@ -57,22 +57,22 @@ I am simply collecting here some ideas and example codes/configs for **Configura
   * Check
     ```powershell
     # Check status of a service
-    (Get-Service "SERVICENAMEDUMMY").Status
+    (Get-Service "SERVICE_NAME_DUMMY").Status
     ```
   * Remediation
     ```powershell
     # Start the service
-    Start-Service "SERVICENAMEDUMMY"
+    Start-Service "SERVICE_NAME_DUMMY"
     ```
 * Startup type of service
   * Check
     ```powershell
     # Check startup type of a service
-    (Get-Service "SERVICENAMEDUMMY").StartType
+    (Get-Service "SERVICE_NAME_DUMMY").StartType
     ```
   * Remediation
     ```powershell
-    Set-Service –Name "SERVICENAMEDUMMY" –StartupType "Automatic"
+    Set-Service –Name "SERVICE_NAME_DUMMY" –StartupType "Automatic"
     ```
 ### Software
 * Check if a particular software is installed
