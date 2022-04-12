@@ -70,5 +70,9 @@ I am simply collecting here some ideas and example codes/configs for **Configura
       # Check startup type of a service
       (Get-Service "SERVICENAMEDUMMY").StartType
       ```
+    * Remediation
+      ```powershell
+      Set-Service –Name "SERVICENAMEDUMMY" –StartupType "Automatic"
+      ```
 * Software
   * Check if a particular software is installed
