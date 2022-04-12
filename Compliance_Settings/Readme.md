@@ -36,6 +36,9 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
   
 * Settings
   * Check the installed Windows version
+    * Check
+      ![2022-04-12 11_25_09-Windows 10 - 21H2 OS version Properties](https://user-images.githubusercontent.com/67605/162928188-3b09f86c-756a-4309-bfb7-981f4a47434e.png)
+      ![2022-04-12 11_25_29-Windows 10 - 21H2 OS version Properties](https://user-images.githubusercontent.com/67605/162928203-ea64065d-d79a-462f-aacf-6c722bf0066a.png)
   * Check if optional features are enabled or disabled (i.e. Internet Explorer)
     * Check:
       ```powershell
