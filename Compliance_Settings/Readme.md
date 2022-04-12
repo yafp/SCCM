@@ -31,6 +31,8 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
   * Check BIOS Setting using PowerShell & WMI and change if needed
 * Registry
   * Check existance of key and create it if needed
+* Settings
+  * Check if optional features are enabled or disabled (i.e. Internet Explorer) and then adjust it
 * Services
   * Check status of service and adjust it if needed
   * Check startup type of service and adjust it if needed
