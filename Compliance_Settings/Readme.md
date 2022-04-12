@@ -6,6 +6,7 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
 ## Passive CIs (without remediation)
 * BIOS
   * Check BIOS Settings using Powershell & WMI
+ 
 * Event Viewer
   * Count amount of specific Event IDs 
     ```powershell
@@ -27,15 +28,24 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
   
 * Registry
   * Check existance of a key
+ 
 * Security
   * Check if Bitlocker is enabled
   * Check if SecureBoot is enabled
+  
 * Settings
   * Check the installed Windows version
   * Check if optional features are enabled or disabled (i.e. Internet Explorer)
+  
 * Services
   * Check status of service
+    ```powershell
+    (Get-Service "SERVICENAMEDUMMY").Status
+    ```
   * Check startup type of service
+    ```powershell
+    (Get-Service "SERVICENAMEDUMMY").StartType
+    ```
 * Software
   * Check if a particular software is installed
 
