@@ -59,6 +59,11 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
       # Check status of a service
       (Get-Service "SERVICENAMEDUMMY").Status
       ```
+    * Remediation
+      ```powershell
+      # Start the service
+      Start-Service "SERVICENAMEDUMMY"
+      ```
   * Check startup type of service
     * Check
       ```powershell
