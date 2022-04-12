@@ -20,10 +20,10 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
 
 * Misc
   * Check free disk space on C:
-  ```powershell
-  # Output free disk space on system drive in bytes
-  (Get-WmiObject Win32_LogicalDisk | where-object {$_.deviceid -eq $env:systemdrive} | select freespace).freespace
-  ```
+    ```powershell
+    # Output free disk space on system drive in bytes
+    (Get-WmiObject Win32_LogicalDisk | where-object {$_.deviceid -eq $env:systemdrive} | select freespace).freespace
+    ```
   
 * Registry
   * Check existance of a key
