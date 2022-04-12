@@ -20,7 +20,7 @@ I am simply collecting here some ideas and example codes/configs for **Configura
 * Check battery capacity
 
 ### Misc
-* Check free disk space on C:
+* Free disk space on C:\ (systemdrive)
   * Check 
     ```powershell
     # Output free disk space on system drive in bytes
