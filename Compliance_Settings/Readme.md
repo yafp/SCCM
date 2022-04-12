@@ -8,7 +8,6 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
   * Check BIOS Settings using Powershell & WMI
 * Event Viewer
   * Count amount of specific Event IDs 
-
   ```powershell
   # Get a count of all application log entries with the ID 866 from the last 30 days
   $date = (Get-Date).AddDays(-30)
@@ -18,8 +17,14 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
 
 * Hardware
   * Check battery capacity
+
 * Misc
   * Check free disk space on C:
+  ```powershell
+  # Output free disk space on system drive in bytes
+  (Get-WmiObject Win32_LogicalDisk | where-object {$_.deviceid -eq $env:systemdrive} | select freespace).freespace
+  ```
+  
 * Registry
   * Check existance of a key
 * Security
