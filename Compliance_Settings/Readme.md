@@ -4,10 +4,10 @@ I am simply collecting here some ideas and example codes/configs for **Configura
 
 
 ## Configuration Items 
-* BIOS
-  * Check BIOS Settings using Powershell & WMI
+### BIOS
+* Check BIOS Settings using Powershell & WMI
  
-* Event Viewer
+### Event Viewer
   * Count amount of specific Event IDs
     * Check
       ```powershell
@@ -16,10 +16,10 @@ I am simply collecting here some ideas and example codes/configs for **Configura
       $myEventIDs = Get-WinEvent -FilterHashtable @{logname=’application’; id=866; StartTime = $date;} | measure
       return $myEventIDs.Count
       ```
-* Hardware
+### Hardware
   * Check battery capacity
 
-* Misc
+### Misc
   * Check free disk space on C:
     * Check 
       ```powershell
@@ -27,14 +27,14 @@ I am simply collecting here some ideas and example codes/configs for **Configura
       (Get-WmiObject Win32_LogicalDisk | where-object {$_.deviceid -eq $env:systemdrive} | select freespace).freespace
       ```
   
-* Registry
+### Registry
   * Check existance of a key
  
-* Security
+### Security
   * Check if Bitlocker is enabled
   * Check if SecureBoot is enabled
   
-* Settings
+### Settings
   * Check the installed Windows version
     * Check
     
@@ -52,27 +52,27 @@ I am simply collecting here some ideas and example codes/configs for **Configura
       # Disable Optional feature Internet Explorer
       C:\Windows\System32\Dism.exe /online /Disable-Feature /FeatureName:Internet-Explorer-Optional-amd64 /Quiet /NoRestart
       ```
-* Services
-  * Check status of service
-    * Check
-      ```powershell
-      # Check status of a service
-      (Get-Service "SERVICENAMEDUMMY").Status
-      ```
-    * Remediation
-      ```powershell
-      # Start the service
-      Start-Service "SERVICENAMEDUMMY"
-      ```
-  * Check startup type of service
-    * Check
-      ```powershell
-      # Check startup type of a service
-      (Get-Service "SERVICENAMEDUMMY").StartType
-      ```
-    * Remediation
-      ```powershell
-      Set-Service –Name "SERVICENAMEDUMMY" –StartupType "Automatic"
-      ```
-* Software
-  * Check if a particular software is installed
+### Services
+* Check status of service
+  * Check
+    ```powershell
+    # Check status of a service
+    (Get-Service "SERVICENAMEDUMMY").Status
+    ```
+  * Remediation
+    ```powershell
+    # Start the service
+    Start-Service "SERVICENAMEDUMMY"
+    ```
+* Check startup type of service
+  * Check
+    ```powershell
+    # Check startup type of a service
+    (Get-Service "SERVICENAMEDUMMY").StartType
+    ```
+  * Remediation
+    ```powershell
+    Set-Service –Name "SERVICENAMEDUMMY" –StartupType "Automatic"
+    ```
+### Software
+* Check if a particular software is installed
