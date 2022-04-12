@@ -21,7 +21,7 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
 
 * Misc
   * Check free disk space on C:
-    * 
+    * Check 
       ```powershell
       # Output free disk space on system drive in bytes
       (Get-WmiObject Win32_LogicalDisk | where-object {$_.deviceid -eq $env:systemdrive} | select freespace).freespace
@@ -49,14 +49,16 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
       ```
 * Services
   * Check status of service
-    ```powershell
-    # Check status of a service
-    (Get-Service "SERVICENAMEDUMMY").Status
-    ```
+    * Check
+      ```powershell
+      # Check status of a service
+      (Get-Service "SERVICENAMEDUMMY").Status
+      ```
   * Check startup type of service
-    ```powershell
-    # Check startup type of a service
-    (Get-Service "SERVICENAMEDUMMY").StartType
-    ```
+    * Check
+      ```powershell
+      # Check startup type of a service
+      (Get-Service "SERVICENAMEDUMMY").StartType
+      ```
 * Software
   * Check if a particular software is installed
