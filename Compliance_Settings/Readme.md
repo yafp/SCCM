@@ -36,14 +36,20 @@ I am simply collecting some ideas here for **Configuration Items (CI)** in SCCM.
 * Settings
   * Check the installed Windows version
   * Check if optional features are enabled or disabled (i.e. Internet Explorer)
+    ```powershell
+    # Check state of Optional feature IE
+    (Get-WindowsOptionalFeature -FeatureName Internet-Explorer-Optional-amd64 -Online).State
+    ```
   
 * Services
   * Check status of service
     ```powershell
+    # Check status of a service
     (Get-Service "SERVICENAMEDUMMY").Status
     ```
   * Check startup type of service
     ```powershell
+    # Check startup type of a service
     (Get-Service "SERVICENAMEDUMMY").StartType
     ```
 * Software
